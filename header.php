@@ -1,6 +1,6 @@
 <?php
 /**
- * @package a11yall
+ * @package faith2015
  */
 ?><!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
