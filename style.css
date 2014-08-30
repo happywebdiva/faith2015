@@ -1,0 +1,128 @@
+/*
+Theme Name: Faith 2015
+Theme URI: http://www.a11yall.org/
+Author: Anna Belle Leiserson
+Author URI: http: //www.happywebdiva.com/
+Description: A  child  of All Y'all Theme to look like my old Faith2012 theme (which is heavily customized for congregation websites), while adding in accessibility and responsive design. Includes customizable menus, header image, widgets and background. 
+Template: a11yall
+Version: 2.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: accessibility-ready, responsive-layout, custom-background, custom-header, custom-menu, featured-images, flexible-header, sticky-post, theme-options, translation-ready
+*/
+
+@import url("../a11yall/style.css");;
+
+body { background: #ccc;font: 15px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.section.header {background: #000000;
+background: -moz-linear-gradient(top,  #444444 0%, #000000 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(100%,#000000));background: -webkit-linear-gradient(top,  #444444 0%,#000000 100%);background: -o-linear-gradient(top,  #444444 0%,#000000 100%);background: -ms-linear-gradient(top,  #444444 0%,#000000 100%);background: linear-gradient(to bottom,  #444444 0%,#000000 100%);border-bottom: 1px solid #4d4d4d;}
+.section.header .container {height: 200px;background: #000;background-repeat:no-repeat;background-size:contain;background-position: left top;}
+.section.header h1 { margin: 0; line-height: 49px; font-size: 38px;}
+.section.header h1 a:hover, .section.header h1 a:focus { color:#c00;}
+.section.header h2 { display: none; margin:0; }
+
+#site-title {position: absolute;top: 136px;left: 0px;width: 100%;margin: 0;border-top: 1px solid #555;}
+#site-title a {display:block;margin: 0; padding: 7px 15px 7px 28px; background: #000; background: rgba(0, 0, 0, 0.5);border-bottom: 1px solid #555;color: white;font-weight:normal; text-decoration: none;}
+#site-title a:hover {background: #000;}
+
+.section.header form#searchform { width: 258px; background: #333; background: rgba(0, 0, 0, 0.35); border-color: #aaa; border-right:none; margin-right:0; border-bottom-right-radius: 0;border-bottom-left-radius: 15px;}
+.section.header input[type="text"] {width: 144px;background: #333; border: 1px solid #aaa; margin-right: 5px; color: #fff;}
+.section.header form#searchform .button, .section.header form#searchform button, .section.header form#searchform input[type="submit"], .section.header form#searchform input[type="reset"], .section.header form#searchform input[type="button"] { margin-bottom: 16px; font-size: 12px;background: #333;border: 1px solid #aaa;color: #ccc;  text-shadow: none;}
+
+.section.mainmenu { background: #000; }
+.section.mainmenu nav { background: #222; }
+
+/* Sidebar */
+#archives h2.tagline { margin: 0 10px 21px -20px; padding: 20px; background: #eee; border: 1px solid #ccc; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;font-size: 17px; line-height: 28px;}
+#archives h2.tagline a { text-decoration: none;}
+
+/*** 7. Media Queries ***/
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+.mdd-menu li { display:none;}
+.mdd-menu li:first-child, .mdd-menu li:nth-child(2), .mdd-menu li:last-child { display: inline-block;}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.section.header .container {height: 160px;}
+#site-title {top: 96px;}	
+.widget-area { padding-left: 7px;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+.mdd-menu a {letter-spacing: 0;}
+.mdd-menu .sub-nav { display: none;}
+.menu-item > a {padding: 11px 10px;}
+
+.section.header .container { height: 140px; background-position: left 63px;}
+#site-title {
+top: 54px;
+border-top: none;}
+#site-title a {height: 151px;
+padding: 7px 10px 0 21px;
+border-bottom: none;}
+
+img#headerlogo { width:25%; margin-top: 77px;}
+.section.header h1 { font-size: 30px; line-height: 38px; margin: 7px 0 14px 0;}
+.section.header form#searchform { right:auto; left:0; margin:0; width: 100%; border: none; border-bottom-left-radius: 0;}
+.section.header form#searchform .button, .section.header form#searchform button, .section.header form#searchform input[type="submit"], .section.header form#searchform input[type="reset"], .section.header form#searchform input[type="button"] { margin-bottom: 15px;}
+
+p#breadcrumbs { margin: -21px 0 21px 0; }
+
+#respond p {margin: 0 0 14px 0;}
+#respond label { float: none; width: auto;text-align: left; }
+#respond input#submit {margin: 10px 0 15px 0;}
+#respond textarea {resize: vertical;width: 70%;line-height: 1.6;padding: 5px 10px;}
+#respond textarea {resize: vertical;width: 94%;line-height: 1.6;padding: 5px 10px;}
+
+.widget-area { padding-left: 0; margin-top: 21px;}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.section.header  input[type="text"] {width: 290px;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {	
+.section.header input[type="text"] {width: 190px;}
+.section.mainmenu { font-size: 14px; }
+
+.section.header h1 { font-size: 22px; line-height: 1.1; margin-bottom:0; padding-bottom: 0;}
+.section.header h2 { display: block; position:absolute; left: 0; padding-top: 0; line-height: 1em; color: #fff; }
+
+.section.header .container { height: 187px;}
+#site-title {top: 118px;}
+#site-title a {height: auto;
+padding: 7px 10px 7px 14px;
+background: none;
+}
+
+
+}
+
+/*** 7. Print ***/
+@media print {
+  * {background: transparent !important;color: #000 !important;box-shadow: none !important;text-shadow: none !important;}
+  a, a:visited {text-decoration: underline;}
+  a[href]:after {content: " (" attr(href) ")";}
+  abbr[title]:after {content: " (" attr(title) ")";}
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {content: "";}
+  pre, blockquote {border: 1px solid #999;page-break-inside: avoid;}
+  thead {display: table-header-group; /* h5bp.com/t */}
+  tr, img {page-break-inside: avoid;}
+  img {max-width: 100% !important;}
+  @page {margin: 0.5cm;}
+  p, h2, h3 {orphans: 3;widows: 3;}
+  h2, h3 {page-break-after: avoid;}
+	
+	nav.menus, nav.secondary-menu, .widget-area { display: none;}
+	.section.header .container { height:auto;}
+	#site-title { position:relative; top:auto; left:auto;}
+}
+
+
