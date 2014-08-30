@@ -90,20 +90,15 @@ p#breadcrumbs { margin: -21px 0 21px 0; }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {	
-.section.header input[type="text"] {width: 190px;}
-.section.mainmenu { font-size: 14px; }
-
+.section.header .container { background-color: #444;}
 .section.header h1 { font-size: 22px; line-height: 1.1; margin-bottom:0; padding-bottom: 0;}
-.section.header p#tagline { display: block; position:absolute; left: 0; padding-top: 0; line-height: 1em; color: #fff; }
-
+.section.header p#tagline { display: block; position:absolute; left: 0px; margin-top: -10px; padding-top: 0; line-height: 2em; color: #fff; text-align: left;}
 .section.header .container { height: 187px;}
+.section.header input[type="text"] {width: 190px;}
 #site-title {top: 118px;}
-#site-title a {height: auto;
-padding: 7px 10px 7px 14px;
-background: none;
-}
-
-
+#site-title a {height: auto;padding: 7px 10px 7px 14px;background: none;}
+.section.mainmenu { font-size: 14px; }
+.widget-area p#tagline { display: none;}
 }
 
 /*** 7. Print ***/
