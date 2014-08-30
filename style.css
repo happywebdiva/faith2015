@@ -4,14 +4,14 @@ Theme URI: http://www.a11yall.org/
 Author: Anna Belle Leiserson
 Author URI: http: //www.happywebdiva.com/
 Description: A  child  of All Y'all Theme to look like my old Faith2012 theme (which is heavily customized for congregation websites), while adding in accessibility and responsive design. Includes customizable menus, header image, widgets and background. 
-Template: faith2015
+Template: a11yall
 Version: 2.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: accessibility-ready, responsive-layout, custom-background, custom-header, custom-menu, featured-images, flexible-header, sticky-post, theme-options, translation-ready
 */
 
-@import url("../a11yall/style.css");;
+@import url("../a11yall/style.css");
 
 body { background: #ccc;font: 15px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
