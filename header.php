@@ -57,7 +57,7 @@
         <a href="#main" class="visuallyhidden focusable" id="skiptomain">Skip to content</a>
         <div id="site-title">
         <h1><a href="<?php echo home_url( '/' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-        <h2><?php bloginfo( 'description' ); ?></h2>
+        <p id="tagline"><?php bloginfo( 'description' ); ?></p>
         </div><!--#site-title-->
         <div id="main-search-box" role="search"><?php  get_search_form() ?></div>
     </div><!--.sixteen.columns-->
