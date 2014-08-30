@@ -5,9 +5,9 @@
 ?>
 <div class="widget-area" role="complementary">
 	<h2 class="visuallyhidden">Sidebar</h2>
+  <p id="tagline"><?php bloginfo( 'description' ); ?></p>
 	<?php if ( ! dynamic_sidebar( 'Sidebar Widgets' ) ) : ?>
   	<aside id="archives" class="widget">
-      <h2 class="tagline"><?php bloginfo( 'description' ); ?></h2>
     	<h3 class="widget-title">Archives</h3>
       <ul>
       	<?php wp_get_archives('type=monthly&limit=12'); ?>
