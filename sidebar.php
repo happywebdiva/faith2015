@@ -7,7 +7,7 @@
 	<h2 class="visuallyhidden">Sidebar</h2>
 	<?php if ( ! dynamic_sidebar( 'Sidebar Widgets' ) ) : ?>
   	<aside id="archives" class="widget">
-      <h2 class="tagline"><a href="<?php echo home_url( '/' ); ?>" rel="home"><?php bloginfo( 'description' ); ?></a></h2>
+      <h2 class="tagline"><?php bloginfo( 'description' ); ?></h2>
     	<h3 class="widget-title">Archives</h3>
       <ul>
       	<?php wp_get_archives('type=monthly&limit=12'); ?>
