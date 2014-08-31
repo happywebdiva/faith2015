@@ -19,10 +19,25 @@ function faith2014_themesetup() {
 			'thumbnail_url' => get_stylesheet_directory_uri() . '/img/kaitlins-flowers-t.jpg',
 			'description' => __( 'Flowers for Kaitline', 'abl' )
 		),
+		'candles' => array(
+			'url' => get_stylesheet_directory_uri() . '/img/candles.jpg',
+			'thumbnail_url' => get_stylesheet_directory_uri() . '/img/candles-t.jpg',
+			'description' => __( 'Candles', 'abl' )
+		),
 		'cherrypath' => array(
 			'url' => get_stylesheet_directory_uri() . '/img/cherry-path.jpg',
 			'thumbnail_url' => get_stylesheet_directory_uri() . '/img/cherry-path-t.jpg',
 			'description' => __( 'Cherry Tree Path', 'abl' )
+		),
+		'fall' => array(
+			'url' => get_stylesheet_directory_uri() . '/img/fall.jpg',
+			'thumbnail_url' => get_stylesheet_directory_uri() . '/img/fall-t.jpg',
+			'description' => __( 'Fall', 'abl' )
+		),
+		'galaxy' => array(
+			'url' => get_stylesheet_directory_uri() . '/img/galaxy.jpg',
+			'thumbnail_url' => get_stylesheet_directory_uri() . '/img/galaxy-t.jpg',
+			'description' => __( 'NASA Galactic Center', 'abl' )
 		),
 		'goldenbridge' => array(
 			'url' => get_stylesheet_directory_uri() . '/img/header-bridge.jpg',
@@ -38,6 +53,16 @@ function faith2014_themesetup() {
 			'url' => get_stylesheet_directory_uri() . '/img/lotus.jpg',
 			'thumbnail_url' => get_stylesheet_directory_uri() . '/img/lotus-t.jpg',
 			'description' => __( 'Lotus Flower', 'abl' )
+		),
+		'orion' => array(
+			'url' => get_stylesheet_directory_uri() . '/img/orion.jpg',
+			'thumbnail_url' => get_stylesheet_directory_uri() . '/img/orion-t.jpg',
+			'description' => __( 'NASA Hubble Orion Nebula', 'abl' )
+		),
+		'sky' => array(
+			'url' => get_stylesheet_directory_uri() . '/img/sky.jpg',
+			'thumbnail_url' => get_stylesheet_directory_uri() . '/img/sky-t.jpg',
+			'description' => __( 'Sky', 'abl' )
 		),
 		'spirograph' => array(
 			'url' => get_stylesheet_directory_uri() . '/img/spirograph.png',
