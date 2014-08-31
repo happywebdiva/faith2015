@@ -1,4 +1,40 @@
 <?php
+
+// Set up a sidebar widger
+add_action( 'widgets_init', 'faith2015_widgets_init' );
+function faith2015_widgets_init() {
+/*	register_sidebar( array(
+  	'name' => 'Sidebar Widgets',
+    'id'   => 'sidebar-widgets',
+    'description'   => 'Drag widget for the sidebar here',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ));
+	register_sidebar( array(
+		'name' => 'Page Sidebar',
+		'id' => 'page-widgets',
+		'description'   => 'Drag to create or update the sidebar for pages',
+		'before_widget' => '<aside class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+   ));
+*/
+	register_sidebar( array(
+		'name' => 'Footer Widget',
+		'id' => 'footer-widget',
+		'description' => __( 'The footer widget area'),
+		'before_widget' => '<div class="footer-widget">',
+		'after_widget' => "</div>",
+		'before_title' => '<h3 class="footer-widget">',
+		'after_title' => '</h3>',
+	) );
+
+}
+
+
 // Start Theme Setup. 
 add_action('after_setup_theme', 'faith2014_themesetup');
 function faith2014_themesetup() {

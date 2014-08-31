@@ -22,6 +22,12 @@
 <div class="section footer">
   <footer class="container" role="contentinfo">
   	<div class="sixteen columns">
+			<?php 
+        if ( !dynamic_sidebar('Footer Widget') ) : 
+          echo '<p>&nbsp;</p>';
+        endif; 
+        wp_footer(); 
+      ?>    
   	  <p>Copyright &copy; <?php echo date("Y"); ?> : 
 	    <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo('name'); ?></a>
 	    </p>
