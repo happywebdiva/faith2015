@@ -3,29 +3,17 @@
 // Set up a sidebar widger
 add_action( 'widgets_init', 'faith2015_widgets_init' );
 function faith2015_widgets_init() {
-/*	register_sidebar( array(
-  	'name' => 'Sidebar Widgets',
-    'id'   => 'sidebar-widgets',
-    'description'   => 'Drag widget for the sidebar here',
-    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</aside>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
-  ));
 	register_sidebar( array(
-		'name' => 'Page Sidebar',
-		'id' => 'page-widgets',
-		'description'   => 'Drag to create or update the sidebar for pages',
-		'before_widget' => '<aside class="widget %2$s">',
-    'after_widget'  => '</aside>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
-   ));
-*/
+		'name' => 'About Sidebar',
+		'id' => 'about-widgets',
+		'description' => __( 'Drag to create or update the sidebar for pages using the "About Us Template"'),
+		'before_widget' => '<li class="custom-widget">',
+		'after_widget' => "</li>",
+	) );
 	register_sidebar( array(
 		'name' => 'Footer Widget',
 		'id' => 'footer-widget',
-		'description' => __( 'The footer widget area'),
+		'description' => __( 'The footer widget area. Add a text widget to include your address and phone.'),
 		'before_widget' => '<div class="footer-widget">',
 		'after_widget' => "</div>",
 		'before_title' => '<h3 class="footer-widget">',
